@@ -13,3 +13,45 @@
  *= require_tree .
  *= require_self
  */
+
+ * {
+  margin: 0;
+  padding: 0;
+ }
+
+ .container {
+  width: 500px;
+  margin: 32px auto;
+ }
+
+ ul {
+  list-style: none;
+ }
+
+ ul li {
+  margin: 18px 0;
+ }
+
+ ul li p{
+  margin: 10px 0;
+ }
+
+ ul li p:first-child{
+  font-size: 32px;
+ }
+
+ ul li p:last-child{
+  font-size: 20px;
+  font-family: sans-serif;
+ }
+
+ a {
+  text-decoration: none;
+  color: rgb(63, 63, 186);
+  font-weight: 500;
+ }
+
+ a:hover {
+  text-decoration: underline;
+  color: rgb(43, 43, 146);
+ }

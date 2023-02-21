@@ -5,9 +5,9 @@ Rails.application.routes.draw do
 
   get 'articles', to: 'articles#list', as: 'articles'
 
-  get 'articles/new', to: 'articles#new'
+  get 'articles/new', to: 'articles#new', as: 'create'
   get 'articles/:id', to: 'articles#show', as: 'article'
-  post 'articles', to: 'articles#create', as: 'create_article'
+  post 'articles', to: 'articles#create'
 
   get 'articles/:id/edit', to: 'articles#edit', as: 'edit'
   patch 'articles/:id', to: 'articles#update'

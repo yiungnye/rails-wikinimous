@@ -1,7 +1,12 @@
-<h1><%= @article.title %></h1>
-<p><%= @article.content %></p>
+<div class="container">
+  <h1><%= @article.title %></h1>
+  <p><%= @article.content %></p>
 
-<p><%= link_to 'back', articles_path %>   <%= link_to 'edit', edit_path %>   <%= link_to "Delete",
-  article_path(@article),
-  data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
-%></p>
+  <p><%= link_to 'back', articles_path %>
+    <%= link_to 'edit', edit_path %>
+    <%= link_to "Delete",
+      article_path(@article),
+      data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+    %>
+  </p>
+</div>

@@ -24,6 +24,25 @@
   margin: 32px auto;
  }
 
+ .nav {
+  display: flex;
+  background-color: rgb(220, 220, 220);
+  justify-content: space-between;
+  padding: 16px 25px;
+  font-size: 18px;
+  font-family: sans-serif;
+ }
+
+ .nav a {
+  text-decoration: none;
+  color: grey;
+ }
+
+ .nav a:hover {
+  cursor: pointer;
+  color: black;
+ }
+
  ul {
   list-style: none;
  }
@@ -45,13 +64,17 @@
   font-family: sans-serif;
  }
 
- a {
+ .container a {
   text-decoration: none;
   color: rgb(63, 63, 186);
   font-weight: 500;
  }
 
- a:hover {
+ .container a:hover {
   text-decoration: underline;
   color: rgb(43, 43, 146);
+ }
+
+ .container > p {
+  margin: 16px 0;
  }
